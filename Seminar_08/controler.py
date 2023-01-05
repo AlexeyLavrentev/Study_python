@@ -54,10 +54,6 @@ def main():
         count1, count2 = model.import_exployees_file()
         logging.warning("Успешный импорт сотрудников из файла.")
         view.res_import(count1, count2)
-    elif select == 8:
-        logging.info("\nВыбрана команда - создание пустой базы.")
-        model.create('DZ_08/catalog.csv')
-        logging.info("\nПустая база успешно создана.")
     else:
         print("\nТакой команды в системе нет!")
     logging.info("Программа отработала корректно!")
